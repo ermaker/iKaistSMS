@@ -8,15 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class iKaistSMSViewController;
-
 @interface iKaistSMSAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    iKaistSMSViewController *viewController;
+    IBOutlet UIWindow *window;
+    IBOutlet UITabBarController *tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet iKaistSMSViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end
 
