@@ -9,9 +9,7 @@
 
 @implementation SettingsController
 - (IBAction)onTouchUpInside:(UIButton *)sender {
-	for (id CurView in self.view.subviews)
-		if ([CurView conformsToProtocol:@protocol(UITextInputTraits)])
-			[CurView resignFirstResponder];
+	[self.view endEditing:NO];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
