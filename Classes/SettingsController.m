@@ -13,4 +13,10 @@
 		if ([CurView conformsToProtocol:@protocol(UITextInputTraits)])
 			[CurView resignFirstResponder];
 }
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Title" message:@"Message" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+}
 @end

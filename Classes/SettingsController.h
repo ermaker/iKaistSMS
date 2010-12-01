@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface SettingsController : UIViewController {
+@interface SettingsController : UIViewController<UITextFieldDelegate> {
 
 }
 - (IBAction)onTouchUpInside:(UIButton *)sender;
