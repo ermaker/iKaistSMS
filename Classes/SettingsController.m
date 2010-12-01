@@ -8,7 +8,7 @@
 #import "SettingsController.h"
 
 @implementation SettingsController
-- (IBAction)onTouchUpInside:(UIButton *)sender {
+- (IBAction)onBackgroundClick:(UIButton *)sender {
 	[self.view endEditing:NO];
 }
 

@@ -11,5 +11,5 @@
 @interface SettingsController : UIViewController<UITextFieldDelegate> {
 
 }
-- (IBAction)onTouchUpInside:(UIButton *)sender;
+- (IBAction)onBackgroundClick:(UIButton *)sender;
 @end
